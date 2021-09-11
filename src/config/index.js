@@ -3,5 +3,6 @@ export default {
     couchDBAuth: {
         username: 'admin',
         password: 'admin',
-    }
+    },
+    couchDBName: 'task'
 };

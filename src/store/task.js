@@ -7,7 +7,7 @@ class TaskStore extends PouchyStore {
     }
   
     setName(params) {
-      this._name = `todos_${params}`;
+      this._name = params;
     }
   
     get urlRemote() {
@@ -19,16 +19,6 @@ class TaskStore extends PouchyStore {
         auth: config.couchDBAuth,
       };
     }
-  
-    // sortData(data) {
-    //   data.sort((one, two) => {
-    //     const oneTs = one.createdAt;
-    //     const twoTs = two.createdAt;
-    //     if (oneTs > twoTs) return -1;
-    //     if (oneTs < twoTs) return 1;
-    //     return 0;
-    //   });
-    // }
   }
   
   export default new TaskStore();
