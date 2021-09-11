@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#pouchy & pouchdb
+/_replicator
+/_users
+/pouch__all_dbs__
